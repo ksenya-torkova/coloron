@@ -594,15 +594,15 @@ ul {
   }
 }
 .logo-block__link {
-  width: 90%;
-  height: 45px;
-  font-size: 30px;
-  line-height: 40px;
+  width: 100%;
+  height: 50px;
+  font-size: 34px;
+  line-height: 46px;
   font-weight: 400;
 }
 @media (max-width: 600px) {
   .logo-block__link {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 .account {
@@ -1381,12 +1381,12 @@ ul {
   text-align: center;
   font-size: 36px;
   font-weight: 300;
-  margin-top: 10px;
-  margin-bottom: 13px;
+  margin-top: 5px;
+  margin-bottom: 8px;
 }
 .main-title--small-margin {
-  margin-top: 5px;
-  margin-bottom: 1px;
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 @media (max-width: 580px) {
   .main-title {
@@ -1642,7 +1642,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   flex-wrap: wrap;
   flex-shrink: 0;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 .site-section__link {
   font-size: 22px;
@@ -1690,12 +1690,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .site-section__notice-add-btn {
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding-top: 4px;
+  padding-bottom: 7px;
 }
 .site-section__notice-add-btn a {
   color: #fff;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: 400;
   padding-left: 44px;
   position: relative;
@@ -1738,13 +1738,13 @@ input[type="checkbox"]:checked + .account-content__label::before {
   background-color: #f1f1ec;
 }
 .site-section__content-vip {
-  padding-top: 18px;
+  padding-top: 13px;
   padding-bottom: 18px;
   position: relative;
 }
 .site-section__content-usual {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media (max-width: 920px) {
   .site-section .site-section__title-wrapper {
@@ -1757,8 +1757,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
     vertical-align: top;
   }
   .site-section__link {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .site-section__link--prev {
     margin-left: 0;
@@ -1810,12 +1810,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
 }
 .notice__time {
-  font-size: 19px;
+  font-size: 18px;
   position: relative;
   width: 70px;
   padding-left: 22px;
@@ -1854,19 +1854,20 @@ input[type="checkbox"]:checked + .account-content__label::before {
   color: #000;
   font-size: 20px;
   width: calc(100% - 160px);
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 10px;
 }
 .notice__text-content h2 {
-  font-size: 29px;
+  font-size: 27px;
+  line-height: 27px;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2px;
 }
 .notice__text-content p {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
 }
 .notice__author {
   margin-left: auto;
@@ -2194,14 +2195,14 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .site-paginator {
   background-color: #f1f1ec;
   text-align: center;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
 }
 .site-paginator a {
   position: relative;
   display: inline-block;
   vertical-align: top;
   color: #000;
-  font-size: 27px;
+  font-size: 25px;
   padding-left: 60px;
 }
 .site-paginator a::before {
@@ -2249,12 +2250,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .site-filter {
   background-color: #f1f1ec;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .site-filter__title {
   display: inline-block;
   vertical-align: middle;
-  font-size: 27px;
+  font-size: 25px;
   margin-right: 10px;
 }
 .site-filter__list {
