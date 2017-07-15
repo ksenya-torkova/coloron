@@ -11,7 +11,7 @@
     <body>
         <!--site header-->
         <header class="main-header  main-header--unauthorized">
-            <div class="container">
+            <div class="container  container--wide">
                 <div class="main-header__row">
                     <div class="account">
                         <span class="account__info">
@@ -21,25 +21,27 @@
                         <button type="button" class="account__dropdown-button"></button>
                         <span class="account__email  highlighted">kreger3@yandex.ru</span>
                     </div>
-                    <div class="main-logo  main-logo--middle">
+                    <div class="main-logo  main-logo--small">
                         <a href="index.html">
                             <span class="visually-hidden">вернуться на главную</span>
                             <img src="img/main-logo.png" alt="лого" width="540" height="126" class="main-logo__image--middle">
                         </a>
                     </div>
                     <div class="city-selection">
-                        <select>
-                            <option value="" selected>Ваш город</option>
-                            <option value="">Москва</option>
-                            <option value="">Санкт-Петербург</option>
-                            <option value="">Екатеринбург</option>
-                            <option value="">Казань</option>
-                            <option value="">Нижний Новгород</option>
-                            <option value="">Новосибирск</option>
-                            <option value="">Сочи</option>
-                            <option value="">Пермь</option>
-                        </select>
-                        <span class="city-selection__native-sity  highlighted">Москва</span>
+                        <div class="city-selection__section-page-wrapper">
+                            <select>
+                                <option value="" selected>Ваш город</option>
+                                <option value="">Москва</option>
+                                <option value="">Санкт-Петербург</option>
+                                <option value="">Екатеринбург</option>
+                                <option value="">Казань</option>
+                                <option value="">Нижний Новгород</option>
+                                <option value="">Новосибирск</option>
+                                <option value="">Сочи</option>
+                                <option value="">Пермь</option>
+                            </select>
+                            <span class="city-selection__native-sity  highlighted"><output>Москва</output></span>
+                        </div>
                     </div>
                     <div class="logo-block">
                         <img src="img/main-logo.png" alt="лого" width="540" height="126">
@@ -99,7 +101,7 @@
         <!--/main site content-->
         <!--main site footer-->
         <footer class="main-footer">
-            <div class="container  container--main-footer">
+            <div class="container  container--main-footer  container--wide">
                 <div class="language-select">
                     <span class="language-select__title">Язык:</span>
                     <ul class="language-select__list">
