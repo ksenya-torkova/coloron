@@ -3387,26 +3387,27 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .signin {
-  width: 500px;
+  width: 420px;
   position: absolute;
-  left: calc(50% - 250px);
-  top: 10vh;
+  left: calc(50% - 210px);
+  top: 5vh;
   z-index: 10;
   background-color: #fff;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (max-width: 560px) {
+@media (max-width: 440px) {
   .signin {
     width: 96%;
     left: 2%;
   }
 }
 .signin__title {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 @media (max-width: 560px) {
   .signin__title {
@@ -3415,43 +3416,32 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .signin__form label {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
-}
-@media (max-width: 560px) {
-  .signin__form label {
-    font-size: 20px;
-  }
 }
 .signin__form input[type="text"],
 .signin__form input[type="phone"] {
   border: 1px solid #a99e9e;
   display: block;
   width: 100%;
-  line-height: 50px;
-  height: 50px;
+  line-height: 40px;
+  height: 40px;
   padding-left: 10px;
   border-radius: 3px;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-family: inherit;
-  font-size: 24px;
-}
-@media (max-width: 560px) {
-  .signin__form input[type="text"],
-  .signin__form input[type="phone"] {
-    margin-bottom: 15px;
-  }
+  font-size: 20px;
 }
 .signin__btn {
   display: inline-block;
   vertical-align: middle;
-  width: 290px;
-  height: 65px;
-  font-size: 26px;
-  line-height: 63px;
+  width: 220px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 48px;
 }
-@media (max-width: 540px) {
+@media (max-width: 440px) {
   .signin__btn {
     display: block;
     width: 100%;
@@ -3495,7 +3485,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   position: relative;
   margin-left: 15px;
 }
-@media (max-width: 540px) {
+@media (max-width: 440px) {
   .signin__label {
     margin-left: 0;
   }
@@ -3503,12 +3493,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .signin__subtitle {
   font-size: 22px;
   font-weight: 400;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
-@media (max-width: 560px) {
+@media (max-width: 440px) {
   .signin__subtitle {
     font-size: 20px;
-    margin-bottom: 15px;
   }
 }
 .signin__social-wrapper {
@@ -3517,7 +3507,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   margin-right: auto;
   margin-bottom: 20px;
 }
-@media (max-width: 540px) {
+@media (max-width: 440px) {
   .signin__social-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -3528,8 +3518,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .signin__link {
   display: inline-block;
   vertical-align: middle;
-  width: 59px;
-  height: 59px;
+  width: 48px;
+  height: 48px;
   margin-bottom: 10px;
 }
 /*message popup*/
@@ -4147,6 +4137,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .link {
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .link--fb {
   background-image: url(../img/fb-sign.png);
