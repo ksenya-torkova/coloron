@@ -844,23 +844,25 @@ ul {
   }
 }
 .banners {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
   justify-content: space-between;
 }
 .banners__wrapper {
-  width: 189px;
-  margin: 0 auto;
+  width: 178px;
   text-align: center;
+}
+.banners__wrapper a {
+  line-height: 0;
 }
 @media (max-width: 780px) {
   .banners__wrapper {
     width: 50%;
   }
   .banners__wrapper img {
-    max-width: 268px;
+    width: 178px;
   }
 }
 @media (max-width: 600px) {
@@ -912,9 +914,9 @@ ul {
   text-align: center;
   width: 100%;
   color: #fff;
-  font-size: 25px;
-  padding-top: 6px;
-  padding-bottom: 10px;
+  font-size: 20px;
+  padding-top: 4px;
+  padding-bottom: 7px;
 }
 .main-links__item--darkblue {
   background-color: #0d2d6a;
@@ -1379,7 +1381,7 @@ ul {
 /*acccount page*/
 .main-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 8px;
@@ -1645,22 +1647,23 @@ input[type="checkbox"]:checked + .account-content__label::before {
   margin-bottom: 10px;
 }
 .site-section__link {
-  font-size: 22px;
+  font-size: 19px;
   color: #004f99;
   position: relative;
   margin-top: 20px;
-  width: 248px;
+  width: 228px;
 }
 .site-section__link--prev {
   padding-left: 30px;
+  margin-left: 20px;
 }
 .site-section__link--prev::before {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 48px;
+  width: 16px;
+  height: 44px;
   left: 0;
-  top: -7px;
+  top: -9px;
   background-image: url(../img/slider-control-prev.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1668,6 +1671,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .site-section__link--next {
   padding-right: 30px;
+  margin-right: 20px;
   text-align: right;
 }
 .site-section__link--next::before {
@@ -1690,12 +1694,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .site-section__notice-add-btn {
   text-align: center;
-  padding-top: 4px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 11px;
 }
 .site-section__notice-add-btn a {
   color: #fff;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   padding-left: 44px;
   position: relative;
@@ -1705,11 +1709,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .site-section__notice-add-btn a::before {
   position: absolute;
   content: "";
-  width: 29px;
-  height: 29px;
-  background-image: url(../img/sprite.png);
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/plus-sign-whitein-circle.png);
   background-repeat: no-repeat;
-  background-position: -6278px -50px;
+  background-position: 0 0;
+  background-size: contain;
   left: 0;
   top: 5px;
 }
@@ -1738,13 +1743,13 @@ input[type="checkbox"]:checked + .account-content__label::before {
   background-color: #f1f1ec;
 }
 .site-section__content-vip {
-  padding-top: 13px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
 }
 .site-section__content-usual {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 @media (max-width: 920px) {
   .site-section .site-section__title-wrapper {
@@ -1815,9 +1820,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
   position: relative;
 }
 .notice__time {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
-  width: 70px;
+  width: 60px;
   padding-left: 22px;
   margin-right: 20px;
   margin-top: 12px;
@@ -1830,12 +1835,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
   left: 0;
-  top: 4px;
+  top: 2px;
 }
 .notice__wrapper {
   background-color: #fff;
   position: relative;
-  width: calc(100% - 70px - 20px);
+  width: calc(100% - 60px - 20px);
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
@@ -1845,7 +1850,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   content: "";
   width: 10px;
   height: 14px;
-  top: 11px;
+  top: 10px;
   left: -10px;
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
@@ -1853,36 +1858,36 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .notice__text-content {
   color: #000;
   font-size: 20px;
-  width: calc(100% - 160px);
+  width: calc(100% - 140px);
   padding: 3px 5px 5px 10px;
 }
 .notice__text-content h2 {
-  font-size: 25px;
+  font-size: 21px;
   line-height: 25px;
   font-weight: 300;
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 .notice__text-content p {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
 }
 .notice__author {
   margin-left: auto;
-  width: 160px;
+  width: 140px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 .notice__fixed-label {
   position: absolute;
-  right: 15px;
+  right: 10px;
   top: -21px;
   display: flex;
   flex-wrap: wrap;
@@ -1890,9 +1895,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
   align-items: center;
 }
 .notice__fixed-content {
-  font-size: 13px;
+  font-size: 11px;
   color: #fff;
-  height: 20px;
+  height: 16px;
   padding-left: 4px;
   padding-right: 4px;
 }
@@ -1914,14 +1919,14 @@ input[type="checkbox"]:checked + .account-content__label::before {
   padding-top: 3px;
 }
 .notice--small .notice__text-content h2 {
-  font-size: 27px;
+  font-size: 21px;
   margin-bottom: 0;
 }
 .notice--small .notice__author {
-  font-size: 20px;
+  font-size: 16px;
 }
 .notice--small + .notice--small {
-  margin-top: 10px;
+  margin-top: 13px;
 }
 @media (max-width: 620px) {
   .notice__text-content {
@@ -1963,7 +1968,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .site-section__content-vip .notice + .notice {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .site-section__content-vip--orange::after {
   position: absolute;
@@ -2185,12 +2190,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   display: inline-block;
   vertical-align: top;
   width: 29px;
-  height: 20px;
+  height: 16px;
   text-transform: uppercase;
   background-color: #ffde00;
   text-align: center;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 16px;
 }
 .site-paginator {
   background-color: #f1f1ec;
