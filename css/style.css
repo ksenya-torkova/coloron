@@ -2392,15 +2392,15 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .pay-modal {
   position: fixed;
   display: block;
-  width: 750px;
-  margin-left: -375px;
+  width: 600px;
+  margin-left: -300px;
   left: 50%;
-  top: 12vh;
+  top: 6vh;
   background-color: #fff;
   z-index: 10;
-  padding: 32px 40px 35px;
+  padding: 10px 15px;
 }
-@media (max-width: 820px) {
+@media (max-width: 780px) {
   .pay-modal {
     position: absolute;
     width: 96%;
@@ -2412,8 +2412,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .pay-modal__title {
   margin-top: 0;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
 }
 @media (max-width: 480px) {
@@ -2423,9 +2424,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal__section-title {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 32px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 28px;
   font-weight: 300;
   text-align: center;
 }
@@ -2442,7 +2443,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   flex-shrink: 0;
   justify-content: space-between;
 }
-@media (max-width: 760px) {
+@media (max-width: 780px) {
   .pay-modal__tarif {
     justify-content: center;
   }
@@ -2456,8 +2457,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
+  width: 100%;
+  justify-content: space-between;
 }
-@media (max-width: 820px) {
+@media (max-width: 780px) {
   .pay-modal__way {
     flex-direction: column;
   }
@@ -2468,7 +2471,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   flex-shrink: 0;
   flex-direction: column;
 }
-@media (max-width: 760px) {
+@media (max-width: 780px) {
   .pay-modal__option {
     -ms-grid-row-align: center;
         align-items: center;
@@ -2478,8 +2481,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
+  width: 50%;
+  justify-content: space-between;
 }
-@media (max-width: 820px) {
+@media (max-width: 780px) {
   .pay-modal__way-wrapper {
     width: 80%;
     margin-left: auto;
@@ -2498,22 +2503,21 @@ input[type="checkbox"]:checked + .account-content__label::before {
   flex-wrap: wrap;
   flex-shrink: 0;
   height: 71px;
-  justify-content: center;
+  width: 85px;
   position: relative;
-}
-.pay-modal__way-to-pay--visa {
-  width: 101px;
+  justify-content: center;
 }
 .pay-modal__way-to-pay--visa::before {
   position: absolute;
   content: "";
-  width: 101px;
+  width: 85px;
   height: 31px;
   left: 0;
   top: 11px;
-  background-image: url(../img/sprite.png);
+  background-image: url(../img/visa-sign.png);
   background-repeat: no-repeat;
-  background-position: -7964px -50px;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 480px) {
   .pay-modal__way-to-pay--visa {
@@ -2522,19 +2526,20 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal__way-to-pay--mastercard {
-  width: 115px;
-  margin-left: 40px;
+  width: 100px;
+  margin-left: 6px;
 }
 .pay-modal__way-to-pay--mastercard::before {
   position: absolute;
   content: "";
-  width: 112px;
+  width: 100px;
   height: 54px;
-  left: 1.5px;
+  left: 0;
   top: 0;
-  background-image: url(../img/sprite.png);
+  background-image: url(../img/master-card-sign.png);
   background-repeat: no-repeat;
-  background-position: -4434px -50px;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 480px) {
   .pay-modal__way-to-pay--mastercard {
@@ -2542,20 +2547,17 @@ input[type="checkbox"]:checked + .account-content__label::before {
     margin-right: auto;
   }
 }
-.pay-modal__way-to-pay--qiwi {
-  width: 89px;
-  margin-left: 24px;
-}
 .pay-modal__way-to-pay--qiwi::before {
   position: absolute;
   content: "";
   width: 45px;
   height: 47px;
-  left: 20px;
+  left: 17px;
   top: 6px;
-  background-image: url(../img/sprite.png);
+  background-image: url(../img/qiwi-sign.png);
   background-repeat: no-repeat;
-  background-position: -6407px -50px;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 480px) {
   .pay-modal__way-to-pay--qiwi {
@@ -2564,19 +2566,19 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal__way-to-pay--yad {
-  width: 95px;
-  margin-left: 24px;
+  margin-left: 8px;
 }
 .pay-modal__way-to-pay--yad::before {
   position: absolute;
   content: "";
   width: 31px;
   height: 37px;
-  left: 32px;
+  left: 24px;
   top: 6px;
-  background-image: url(../img/sprite.png);
+  background-image: url(../img/yad-sign.png);
   background-repeat: no-repeat;
-  background-position: -8625px -50px;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 820px) {
   .pay-modal__way-to-pay--yad {
@@ -2589,20 +2591,17 @@ input[type="checkbox"]:checked + .account-content__label::before {
     margin-right: auto;
   }
 }
-.pay-modal__way-to-pay--webmoney {
-  width: 72px;
-  margin-left: 24px;
-}
 .pay-modal__way-to-pay--webmoney::before {
   position: absolute;
   content: "";
   width: 42px;
   height: 41px;
-  left: 15px;
+  left: 21px;
   top: 6px;
-  background-image: url(../img/sprite.png);
+  background-image: url(../img/webmoney-sign.png);
   background-repeat: no-repeat;
-  background-position: -8324px -50px;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 480px) {
   .pay-modal__way-to-pay--webmoney {
@@ -2610,20 +2609,17 @@ input[type="checkbox"]:checked + .account-content__label::before {
     margin-right: auto;
   }
 }
-.pay-modal__way-to-pay--mobile {
-  width: 56px;
-  margin-left: 28px;
-}
 .pay-modal__way-to-pay--mobile::before {
   position: absolute;
   content: "";
   width: 45px;
   height: 44px;
-  left: 6px;
+  left: 16px;
   top: 6px;
-  background-image: url(../img/sprite.png);
+  background-image: url(../img/mobil-phone-sign.png);
   background-repeat: no-repeat;
-  background-position: -4866px -50px;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 480px) {
   .pay-modal__way-to-pay--mobile {
@@ -2632,15 +2628,15 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal__time {
-  width: 123px;
-  height: 78px;
+  width: 100px;
+  height: 65px;
   text-align: center;
   background-color: #8b20cb;
   color: #fff;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 76px;
-  margin-bottom: 15px;
+  line-height: 63px;
+  margin-bottom: 10px;
 }
 .pay-modal__time--highlited {
   background-color: #f53077;
@@ -2667,11 +2663,11 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal__cost {
-  width: 123px;
-  height: 45px;
-  font-size: 26px;
+  width: 100px;
+  height: 40px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 43px;
+  line-height: 38px;
   color: #fff;
   text-align: center;
   background-color: #1c9fb0;
@@ -2696,16 +2692,17 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal__way-to-pay-label {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 10px;
   margin-top: 58px;
 }
 .pay-modal__btn {
-  margin-top: 35px;
-  width: 225px;
-  height: 61px;
-  font-size: 26px;
-  line-height: 60px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 215px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 48px;
 }
 @media (max-width: 480px) {
   .pay-modal__btn {
@@ -2718,12 +2715,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal--shorter {
-  padding: 15px;
-  width: 700px;
-  margin-left: -350px;
-  top: 10vh;
+  padding: 10px 15px;
+  width: 590px;
+  margin-left: -295px;
+  top: 7vh;
 }
-@media (max-width: 820px) {
+@media (max-width: 780px) {
   .pay-modal--shorter {
     position: absolute;
     width: 90%;
@@ -2739,7 +2736,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .pay-modal--shorter .pay-modal__title {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 @media (max-width: 680px) {
   .pay-modal--shorter .pay-modal__title {
@@ -2748,8 +2745,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .pay-modal--shorter .pay-modal__section-subtitle {
   margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 29px;
+  margin-bottom: 10px;
+  font-size: 24px;
   text-align: left;
   font-weight: 300;
 }
@@ -2768,16 +2765,11 @@ input[type="checkbox"]:checked + .account-content__label::before {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
-}
-@media (max-width: 680px) {
-  .pay-modal--shorter .pay-modal__text {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  margin-top: 10px;
 }
 .pay-modal--shorter .pay-modal__section-title {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 @media (max-width: 680px) {
   .pay-modal--shorter .pay-modal__section-title {
@@ -2787,7 +2779,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .pay-modal--shorter .pay-modal__btn {
   width: 360px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 @media (max-width: 680px) {
   .pay-modal--shorter .pay-modal__btn {
