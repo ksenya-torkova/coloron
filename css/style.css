@@ -487,12 +487,7 @@ body {
 .container--main-content {
   background-color: #f1f1ec;
   padding-top: 1px;
-  padding-bottom: 59px;
-}
-@media (max-width: 720px) {
-  .container--main-content {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 20px;
 }
 .container--main-footer {
   display: flex;
@@ -1384,8 +1379,8 @@ ul {
   text-align: center;
   font-size: 32px;
   font-weight: 300;
-  margin-top: 5px;
-  margin-bottom: 8px;
+  margin-top: 3px;
+  margin-bottom: 10px;
 }
 .main-title--small-margin {
   margin-top: 3px;
@@ -1402,7 +1397,7 @@ ul {
   }
 }
 .account-content {
-  margin-top: 20px;
+  margin-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1439,8 +1434,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
   border: 1px solid #a8c97f;
   cursor: pointer;
   position: relative;
-  margin-left: 50px;
-  padding: 13px 17px 12px;
+  margin-left: 40px;
+  padding: 6px 15px 10px;
   background-color: #f8f8f6;
 }
 .account-content__label:hover {
@@ -1461,7 +1456,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   width: 30px;
   height: 30px;
   border: 1px solid #a0a08d;
-  left: -50px;
+  left: -40px;
   top: 0;
 }
 @media (max-width: 500px) {
@@ -1471,9 +1466,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .account-content__subtitle {
   display: block;
-  font-size: 29px;
+  font-size: 25px;
   color: #525252;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding-right: 180px;
 }
 @media (max-width: 700px) {
@@ -1488,7 +1483,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .account-content__text {
-  line-height: 25px;
+  line-height: 20px;
   color: #525252;
   clear: right;
 }
@@ -1500,7 +1495,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   font-size: 18px;
   line-height: 25px;
   color: #525252;
-  padding: 14px 16px 14px 32px;
+  padding: 8px 15px;
 }
 @media (max-width: 700px) {
   .account-content__datetime {
@@ -1514,8 +1509,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .account-buttons {
-  margin-top: 35px;
-  padding-left: 65px;
+  margin-top: 20px;
+  padding-left: 55px;
   padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -1526,9 +1521,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
   position: relative;
   width: 31.9%;
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   padding-top: 11px;
-  padding-bottom: 18px;
+  padding-bottom: 13px;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -1543,7 +1538,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .account-buttons__button--pin {
   background-color: #28731e;
 }
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   .account-buttons__button {
     font-size: 20px;
     padding-left: 30px;
@@ -1594,20 +1589,20 @@ input[type="checkbox"]:checked + .account-content__label::before {
   border-radius: 3px;
   background-color: #fff;
   z-index: 10;
-  width: 123%;
-  bottom: 45px;
+  width: 120%;
+  bottom: 40px;
   left: 35px;
-  padding: 10px;
-  font-size: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22px;
   color: #28731e;
   opacity: 0;
 }
 .account-buttons__popup-content p {
   margin: 0;
 }
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   .account-buttons__popup-content {
     text-align: center;
     font-size: 18px;
