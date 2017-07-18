@@ -271,40 +271,68 @@
         </footer>
         <!--/main site footer-->
         <div class="overlay"></div>
-        <div class="message  message-modal">
-            <button class="message__cross  btn-close" type="button"></button>
-            <h2 class="message__title">Встречусь попить кофе</h2>
-            <div class="message__receiver-wrapper">
-                <span class="message__receiver">Татьяна, 25</span>
-                <span class="message__aids  message__aids--active  link  link--active  link--aids">
-                </span>
+        <div class="chat  chat-modal">
+            <button class="chat__cross  btn-close" type="button"></button>
+            <div class="chat__header  chat__header--green">
+                <h2 class="chat__title">Встречусь попить кофе</h2>
+                <span class="chat__recipient">Татьяна, 25</span>
             </div>
-            <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex upidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-            <div class="message__img-wrapper">
-                <img src="img/message-form-photo-01.jpg" alt="фото" class="message__photo" width="291" height="200">
-                <img src="img/message-form-photo-02.jpg" alt="фото" class="message__photo" width="295" height="203">
+            <div class="chat__notice">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ntur labo Lorem ipsum labore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation labo</p>
+                <div class="chat__img-wrapper">
+                    <img src="img/chat-form-photo-01.jpg" alt="фото" width="196" height="213">
+                    <img src="img/chat-form-photo-02.jpg" alt="фото" width="195" height="212">
+                </div>
             </div>
-            <form class="message__form">
-                <h3 class="message__subtitle">Ответить</h3>
-                <div class="message__wrapper">
-                    <div class="message__half-wrapper">
+            <div class="chat__area">
+                <div class="chat__outbox">
+                    <div class="chat__sender">
+                        <span class="chat__sender-name">Вы</span>
+                        <span class="chat__send-time">22:30</span>
+                    </div>
+                    <p class="chat__send">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut irua pariatur. Excepteur sint occaecat cupidatat</p>
+                </div>
+                <div class="chat__inbox">
+                    <p class="chat__recieve">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore it, sed quia consequu labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <div class="chat__reciever">
+                        <span class="chat__reciever-name">Татьяна</span>
+                        <span class="chat__recieve-time">22:30</span>
+                    </div>
+                </div>
+                <div class="chat__outbox">
+                    <div class="chat__sender">
+                        <span class="chat__sender-name">Вы</span>
+                        <span class="chat__send-time">22:30</span>
+                    </div>
+                    <p class="chat__send">Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut eiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+                </div>
+                <div class="chat__inbox">
+                    <p class="chat__recieve">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore it, sed quia conseqncidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <div class="chat__reciever">
+                        <span class="chat__reciever-name">Татьяна</span>
+                        <span class="chat__recieve-time">22:30</span>
+                    </div>
+                </div>
+            </div>
+            <form class="chat__form">
+                <h3 class="chat__subtitle">Ваш ответ</h3>
+                <div class="chat__wrapper">
+                    <div class="chat__column">
                         <label>Ваше имя</label>
                         <input type="text" placeholder="Сергей">
-                    </div>
-                    <div class="message__half-wrapper">
                         <label>Ваш возраст</label>
                         <input type="text" placeholder="32">
+                        <span class="chat__label">Добавить фото</span>
+                        <a href="#" class="chat__link">
+                            <span class="visually-hidden">Добавить фото</span>
+                        </a>
+                    </div>
+                    <div class="chat__column  chat__column--wide">
+                        <label>Текст ответа</label>
+                        <textarea rows="3"></textarea>
+                        <button type="submit" class="chat__btn  btn  btn--green">Отправить</button>
                     </div>
                 </div>
-                <div class="message__textarea-wrapper">
-                    <label>Текст ответа</label>
-                    <textarea rows="3"></textarea>
-                </div>
-                <span class="message__label">Добавить фото</span>
-                <a href="#" class="message__plus">
-                    <span class="visually-hidden">Добавить фото</span>
-                </a>
-                <button type="button" class="message__btn  btn  btn--green">Ответить</button>
             </form>
         </div>
     </body>

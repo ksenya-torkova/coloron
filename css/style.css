@@ -2458,7 +2458,6 @@ input[type="checkbox"]:checked + .account-content__label::before {
   flex-wrap: wrap;
   flex-shrink: 0;
   width: 100%;
-  justify-content: space-between;
 }
 @media (max-width: 780px) {
   .pay-modal__way {
@@ -2482,7 +2481,6 @@ input[type="checkbox"]:checked + .account-content__label::before {
   flex-wrap: wrap;
   flex-shrink: 0;
   width: 50%;
-  justify-content: space-between;
 }
 @media (max-width: 780px) {
   .pay-modal__way-wrapper {
@@ -2507,6 +2505,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
   position: relative;
   justify-content: center;
 }
+.pay-modal__way-to-pay--visa {
+  margin-left: 0;
+  margin-right: auto;
+}
 .pay-modal__way-to-pay--visa::before {
   position: absolute;
   content: "";
@@ -2527,7 +2529,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .pay-modal__way-to-pay--mastercard {
   width: 100px;
-  margin-left: 6px;
+  margin-left: auto;
 }
 .pay-modal__way-to-pay--mastercard::before {
   position: absolute;
@@ -2546,6 +2548,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.pay-modal__way-to-pay--qiwi {
+  margin-left: auto;
+  margin-right: 0;
 }
 .pay-modal__way-to-pay--qiwi::before {
   position: absolute;
@@ -2567,6 +2573,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .pay-modal__way-to-pay--yad {
   margin-left: 8px;
+  margin-right: auto;
 }
 .pay-modal__way-to-pay--yad::before {
   position: absolute;
@@ -2591,6 +2598,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
     margin-right: auto;
   }
 }
+.pay-modal__way-to-pay--webmoney {
+  margin-left: auto;
+  margin-right: auto;
+}
 .pay-modal__way-to-pay--webmoney::before {
   position: absolute;
   content: "";
@@ -2608,6 +2619,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.pay-modal__way-to-pay--mobile {
+  margin-left: auto;
+  margin-right: 0;
 }
 .pay-modal__way-to-pay--mobile::before {
   position: absolute;
@@ -3508,10 +3523,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .message {
   background-color: #fff;
   border: 2px solid #a99e9e;
-  width: 660px;
+  width: 530px;
   position: absolute;
-  left: calc(50% - 330px);
-  top: 2vh;
+  left: calc(50% - 265px);
+  top: 3vh;
   z-index: 10;
 }
 @media (max-width: 700px) {
@@ -3526,10 +3541,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
   right: -2px;
 }
 .message__title {
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 300;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 @media (max-width: 560px) {
@@ -3546,7 +3561,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .message__receiver {
   display: inline-block;
   vertical-align: middle;
-  font-size: 22px;
+  font-size: 20px;
 }
 @media (max-width: 560px) {
   .message__receiver {
@@ -3556,8 +3571,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .message__aids {
   display: inline-block;
   vertical-align: middle;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   background-position: center;
   margin-left: 13px;
 }
@@ -3565,10 +3580,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
   border: 1px solid #e64423;
 }
 .message__content {
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 16px;
-  line-height: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  line-height: 20px;
   margin-top: 5px;
   margin-bottom: 8px;
 }
@@ -3582,11 +3597,11 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .message__img-wrapper {
   text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .message__img-wrapper img {
-  width: 47%;
+  width: 46%;
 }
 .message__img-wrapper img + img {
   margin-left: 15px;
@@ -3598,7 +3613,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .message__form {
   background-color: #f0f1ec;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 @media (max-width: 560px) {
   .message__form {
@@ -3606,12 +3621,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .message__subtitle {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 300;
   text-align: center;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 3px;
 }
 @media (max-width: 560px) {
   .message__subtitle {
@@ -3629,7 +3644,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .message__wrapper label {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   color: #424242;
 }
 @media (max-width: 560px) {
@@ -3643,7 +3658,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   margin-top: 5px;
   height: 40px;
   line-height: 40px;
-  font-size: 16px;
+  font-size: 15px;
   color: #424242;
   padding-left: 15px;
   font-family: inherit;
@@ -3668,7 +3683,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .message__textarea-wrapper label {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   color: #424242;
 }
 @media (max-width: 560px) {
@@ -3679,7 +3694,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .message__textarea-wrapper textarea {
   width: 100%;
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 15px;
   color: #424242;
   padding: 10px 15px;
   font-family: inherit;
@@ -3690,7 +3705,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .message__label {
-  font-size: 16px;
+  font-size: 15px;
   color: #424242;
   margin-left: 25px;
 }
@@ -3711,15 +3726,14 @@ input[type="checkbox"]:checked + .account-content__label::before {
   background-position: center;
 }
 .message__btn {
-  width: 400px;
-  height: 50px;
-  line-height: 46px;
-  font-size: 29px;
-  margin-top: 8px;
+  width: 300px;
+  height: 47px;
+  line-height: 40px;
+  font-size: 24px;
+  margin-top: 5px;
 }
 @media (max-width: 560px) {
   .message__btn {
-    font-size: 24px;
     width: 90%;
     margin-top: 10px;
   }
@@ -3727,13 +3741,13 @@ input[type="checkbox"]:checked + .account-content__label::before {
 /*chat*/
 .chat {
   background-color: #fff;
-  width: 780px;
+  width: 630px;
   position: absolute;
-  left: calc(50% - 390px);
-  top: 1vh;
+  left: calc(50% - 315px);
+  top: 2vh;
   z-index: 10;
 }
-@media (max-width: 830px) {
+@media (max-width: 780px) {
   .chat {
     width: 96%;
     left: 2%;
@@ -3749,7 +3763,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 }
 .chat__title {
   margin-top: 0;
-  font-size: 38px;
+  font-size: 30px;
   line-height: 40px;
   font-weight: 300;
   margin-bottom: 0;
@@ -3766,7 +3780,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .chat__recipient {
-  font-size: 22px;
+  font-size: 20px;
 }
 @media (max-width: 680px) {
   .chat__recipient {
@@ -3783,12 +3797,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   margin-top: 10px;
 }
 .chat__notice p {
-  width: calc(100% - 280px - 10px);
+  width: calc(100% - 252px - 10px);
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 10px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
 }
 @media (max-width: 680px) {
   .chat__notice p {
@@ -3806,7 +3820,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   display: flex;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  width: 280px;
+  width: 252px;
 }
 @media (max-width: 680px) {
   .chat__img-wrapper {
@@ -3821,8 +3835,8 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .chat__img-wrapper img {
-  width: 140px;
-  height: 153px;
+  width: 126px;
+  height: 138px;
   margin-left: auto;
 }
 @media (max-width: 680px) {
@@ -3883,15 +3897,15 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .chat__sender-name {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 .chat__send {
   width: 88%;
   margin: 0;
   padding: 5px 10px;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 15px;
+  line-height: 20px;
   color: #fff;
   background-color: #28731e;
 }
@@ -3957,14 +3971,14 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .chat__reciever-name {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 .chat__recieve {
   width: 88%;
   margin: 0;
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 23px;
   color: #000;
   background-color: #fff;
@@ -3994,7 +4008,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   padding-bottom: 8px;
 }
 .chat__subtitle {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 28px;
   font-weight: 300;
   color: #424242;
@@ -4096,11 +4110,11 @@ input[type="checkbox"]:checked + .account-content__label::before {
   width: 100%;
 }
 .chat__btn {
-  width: 270px;
+  width: 230px;
   margin-left: 0;
-  height: 60px;
-  line-height: 58px;
-  font-size: 28px;
+  height: 50px;
+  line-height: 48px;
+  font-size: 24px;
 }
 @media (max-width: 540px) {
   .chat__btn {
