@@ -119,10 +119,21 @@
                         </li>
                     </ul>
                 </div>
+                <div class="partners-logo">
+                    <a href="#" class="partners-logo__link  partners-logo__link--wider">
+                        <img src="img/imperia-logo.png" alt="imperia" width="326" height="50">
+                    </a>
+                    <a href="#" class="partners-logo__link  partners-logo__link--wide">
+                        <img src="img/zerotaxi-logo.png" alt="zerotaxi" width="203" height="50">
+                    </a>
+                    <a href="#" class="partners-logo__link  partners-logo__link--narrow">
+                        <img src="img/delgado-logo.png" alt="delgado" width="156" height="51">
+                    </a>
+                </div>
                 <div class="footer-links">
                     <ul class="footer-links__list">
-                        <li><a href="#">Обратная связь</a></li>
                         <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Обратная связь</a></li>
                     </ul>
                 </div>
             </div>
@@ -205,9 +216,33 @@
                 <input type="text" class="feedback__input  feedback__input--wider">
                 <label class="feedback__label">Текст объявления (до 250 символов)</label>
                 <textarea rows="3" class="feedback__textarea"></textarea>
-                <button type="submit" class="btn  btn--lightgreen  feedback__btn">Отправить</button>
+                <button type="button" class="btn  btn--lightgreen  feedback__btn">Отправить</button>
             </form>
-            <p class="feedback__note">Спасибо за обращение!</p>
         </div>
+        
+        <div class="modal feedback-sent feedback-sent--hidden">
+          <button class="feedback-sent__cross  btn-close" type="button"></button>
+          <img src="img/feedback-check.png" alt="сообщение успешно отправлено" class="feedback-sent__check" width="148" height="168">
+          <h2 class="feedback-sent__title">Спасибо за обращение!</h2>
+        </div>
+        <script>
+            var btn = document.querySelector('.btn--lightgreen');
+            var form = document.querySelector('.feedback');
+            var modal = document.querySelector('.feedback-sent');
+            var cross = modal.querySelector('.feedback-sent__cross');
+            var overlay = document.querySelector('.overlay');
+            
+            btn.addEventListener('click', function (evt) {
+                evt.preventDefault;
+                form.classList.add('feedback--hidden');
+                modal.classList.remove('feedback-sent--hidden');
+            });
+            
+            cross.addEventListener('click', function(evt) {
+                evt.preventDefault;
+                modal.classList.add('feedback-sent--hidden');
+                overlay.classList.add('overlay--hidden');
+            });
+        </script>
     </body>
 </html>
