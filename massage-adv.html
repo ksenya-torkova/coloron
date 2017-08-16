@@ -228,6 +228,7 @@
                             </a>
                         </li>
                     </ul>
+                    <button type="button" class="btn  btn--gray  btn-reset">Сбросить</button>
                 </div>
             </div>
         </main>
@@ -251,6 +252,17 @@
                             <a href="#" class="language-select__item  language-select__item--it"><span class="visually-hidden">sito italiano</span></a>
                         </li>
                     </ul>
+                </div>
+                <div class="partners-logo">
+                    <a href="#" class="partners-logo__link  partners-logo__link--wider">
+                        <img src="img/imperia-logo.png" alt="imperia" width="326" height="50">
+                    </a>
+                    <a href="#" class="partners-logo__link  partners-logo__link--wide">
+                        <img src="img/zerotaxi-logo.png" alt="zerotaxi" width="203" height="50">
+                    </a>
+                    <a href="#" class="partners-logo__link  partners-logo__link--narrow">
+                        <img src="img/delgado-logo.png" alt="delgado" width="156" height="51">
+                    </a>
                 </div>
                 <div class="footer-links">
                     <ul class="footer-links__list">
@@ -341,29 +353,5 @@
                 </div>
             </form>
         </div>
-        <script>
-            var closeBtn = document.querySelector(".dispatch__cross");
-            var overlay = document.querySelector(".overlay");
-            var noticePopup = document.querySelector(".massage-modal");
-            var openBtn = document.querySelector(".site-section__notice-add-btn--blue");
-            
-            openBtn.addEventListener("click", function(evt) {
-                evt.preventDefault();
-				overlay.classList.remove("overlay--hidden");
-                noticePopup.classList.remove("massage-modal--hidden")
-			});
-            
-            closeBtn.addEventListener("click", function(evt) {
-                evt.preventDefault();
-                overlay.classList.add("overlay--hidden");
-                noticePopup.classList.add("massage-modal--hidden");
-            });
-            
-            overlay.addEventListener("click", function(evt) {
-                evt.preventDefault();
-                overlay.classList.add("overlay--hidden");
-                noticePopup.classList.add("massage-modal--hidden");
-            });
-        </script>
     </body>
 </html>

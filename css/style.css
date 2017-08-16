@@ -2422,6 +2422,24 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .btn--lightgreen {
   background-color: #46bb36;
 }
+.btn--gray {
+  background-color: #c4c4c4;
+}
+.btn-reset {
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+  margin-left: 20px;
+  height: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+@media (max-width: 630px) {
+  .btn-reset {
+    margin-top: 15px;
+  }
+}
 .btn-close {
   display: inline-block;
   vertical-align: top;
