@@ -2369,6 +2369,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .signin-code.signin-code--hidden {
   display: none;
 }
+.signin-email.signin-email--hidden {
+  display: none;
+}
 .modal-up.modal-up--hidden {
   display: none;
 }
@@ -3480,10 +3483,12 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .signin__form label {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
+  margin-left: 30px;
 }
 .signin__form input[type="text"],
+.signin__form input[type="email"],
 .signin__form input[type="phone"] {
   border: 1px solid #a99e9e;
   display: block;
@@ -3492,15 +3497,18 @@ input[type="checkbox"]:checked + .account-content__label::before {
   height: 40px;
   padding-left: 10px;
   border-radius: 3px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 7px;
+  margin-bottom: 13px;
   font-family: inherit;
   font-size: 20px;
+}
+.signin__form input[name="name"] {
+  margin-bottom: 18px;
 }
 .signin__btn {
   display: inline-block;
   vertical-align: middle;
-  width: 220px;
+  width: 210px;
   height: 50px;
   font-size: 20px;
   line-height: 48px;
@@ -3542,22 +3550,23 @@ input[type="checkbox"]:checked + .account-content__label::before {
   left: 0;
   border: none;
 }
-.signin__label {
+.signin__form .signin__label {
   display: inline-block;
   vertical-align: middle;
   padding-left: 40px;
   position: relative;
-  margin-left: 15px;
+  margin-left: 43px;
+  padding-top: 4px;
 }
 @media (max-width: 440px) {
-  .signin__label {
+  .signin__form .signin__label {
     margin-left: 0;
   }
 }
 .signin__subtitle {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 @media (max-width: 440px) {
