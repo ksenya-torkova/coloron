@@ -4579,6 +4579,9 @@ input[type="checkbox"]:checked + .account-content__label::before {
     -ms-grid-row-align: center;
         align-items: center;
   }
+  .partners-logo__link--wider {
+    margin-left: 0;
+  }
 }
 .partners-logo__link {
   display: inline-block;
@@ -4601,6 +4604,11 @@ input[type="checkbox"]:checked + .account-content__label::before {
   margin-left: 34px;
   margin-top: 8px;
 }
+@media (max-width: 500px) {
+  .partners-logo__link--wider {
+    margin-left: 0;
+  }
+}
 .partners-logo__link--wide {
   width: 113px;
   height: 28px;
@@ -4608,9 +4616,6 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .partners-logo__link--narrow {
   width: 87px;
   height: 29px;
-}
-.partners-logo__link img {
-  
 }
 .container--wide .partners-logo {
   margin-left: 20px;
