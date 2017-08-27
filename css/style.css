@@ -4560,7 +4560,6 @@ input[type="checkbox"]:checked + .account-content__label::before {
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
-  margin-left: 25px;
 }
 @media (max-width: 780px) {
   .partners-logo {
@@ -4584,7 +4583,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
 .partners-logo__link {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 34px;
 }
 @media (max-width: 780px) {
   .partners-logo__link {
@@ -4597,16 +4596,21 @@ input[type="checkbox"]:checked + .account-content__label::before {
   }
 }
 .partners-logo__link--wider {
-  width: 175px;
+  width: 126px;
+  height: 20px;
+  margin-left: 34px;
+  margin-top: 8px;
 }
 .partners-logo__link--wide {
-  width: 109px;
+  width: 113px;
+  height: 28px;
 }
 .partners-logo__link--narrow {
-  width: 85px;
+  width: 87px;
+  height: 29px;
 }
 .partners-logo__link img {
-  height: 30px;
+  
 }
 .container--wide .partners-logo {
   margin-left: 20px;
@@ -4641,7 +4645,7 @@ input[type="checkbox"]:checked + .account-content__label::before {
   vertical-align: top;
 }
 .footer-links li:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .footer-links a {
   color: #fff;
