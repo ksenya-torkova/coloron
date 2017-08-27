@@ -2345,6 +2345,10 @@ input[type="checkbox"]:checked + .account-content__label::before {
   border-width: 5px 6px 5px 0;
   border-color: transparent #f5f5f2 transparent transparent;
 }
+.notice a {
+  text-decoration: none;
+  color: #000;
+}
 .vip {
   display: inline-block;
   vertical-align: top;
